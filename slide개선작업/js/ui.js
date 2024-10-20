@@ -1589,7 +1589,7 @@
                 var $btns = $boxImgSwiperContainer.find('.s-slide-btn');
                 var btnHeight = $btns.height() / 2;
                 $btns.css({
-                  'top': (imgHeight / 2) - btnHeight,
+                  'top': (imgHeight / 2) + btnHeight,
                 });
               setTimeout(function(){
                 $boxImgSwiperContainer.find('.swiper-button-prev').attr({'tabindex' : '-1'} , {'aria-hidden' : true});
