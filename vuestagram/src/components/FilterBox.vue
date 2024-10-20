@@ -1,6 +1,6 @@
 <template>
 
-        <div :class="`filter-item ${filterData}`"   @click="$emit('filterClass', filterData)" :style="`background-image: url(${uploadimg})`">{{ filterData }}</div> 
+        <div :class="`filter-item + ${filterData}`"   @click="$emit('filterClass', filterData)" :style="`background-image: url(${uploadimg})`">{{ filterData }}</div> 
     
 </template>
 
