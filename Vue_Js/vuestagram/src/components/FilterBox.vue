@@ -1,12 +1,13 @@
 <template>
-
-        <div :class="`filter-item + ${filterData}`"   @click="$emit('filterClass', filterData)" :style="`background-image: url(${uploadimg})`">{{ filterData }}</div> 
-    
+  <div :class="`filter-item ${filterData}`"  :style="`background-image: url(${uploadimg})`">{{ filterData }}</div>    
 </template>
 
 <script>
 export default {
     name: 'FilterboxCom',
+    methods:{
+
+    },
     props:{
         uploadimg:String,
         filterData:Array,

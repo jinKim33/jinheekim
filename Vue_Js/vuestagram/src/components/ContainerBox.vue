@@ -5,7 +5,7 @@
     </div>
     <!-- 필터선택페이지 -->
     <div class="" v-if="step == 1" >
-        <div :class="`upload-image ${classfilter}`" @filterClass="classfilter=$event" :style="`background-image: url(${uploadimg})`"  @change="$emit('changeimg', this.uploadimg)"></div>
+        <div :class="`upload-image ${classfilter}`" :style="`background-image: url(${uploadimg})`"></div>
         <div class="filters">
           <FilterboxCom :uploadimg="uploadimg" :filterData="filterData[i]" v-for ="(filter,i) in filterData" :key="i"></FilterboxCom>
         </div>
@@ -21,18 +21,19 @@
 
 <script>
 export default {
-
   components: {
     Post : PostCom,
     FilterboxCom,
   },
-  
   props:{
     게시물 : Array,
     step : Number,
     uploadimg : String,
     filterData : Array,
   },
+  mounted(){
+
+  }
 }
 
 import PostCom from './PostComponent.vue';
