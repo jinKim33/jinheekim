@@ -29,6 +29,7 @@ header .top_header .inner .util_box > div .resize li .zoomDefault{padding:0 20px
 header .btm{border-top: 1px solid #ddd;}
 header .btm .inner > div nav .mainMenu{display:flex;justify-content:start;}
 header .btm .inner > div nav .mainMenu li a{position:relative;display:block;padding:0 40px;font-weight:800;font-size:22px;line-height:60px;height:60px;color:#333}
+header .btm .inner > div nav .mainMenu li a:hover,header .btm .inner > div nav .mainMenu li a:focus{color:#288bcc}
 header .btm .inner > div nav .mainMenu li + li a:after{content: "";display: block;position:absolute;top:50%;left:0;transform:translateY(-50%);width: 1px;height:12px;background-color: #e3e3e3;}
 header .btm .inner .sub_menu{position:absolute;left:0;top:160px;width:100%;background:#fff;border-top: 1px solid #ddd;}
 header .btm .inner .sub_menu .sub_menu_inner{display:flex;justify-content:start;margin:0 auto;width:1200px;padding:40px 0;box-sizing: border-box;}
@@ -53,8 +54,8 @@ header .btm .inner > div .login_box button{height:60px;background:url('../images
 .content .inner .service_box.color02{background-image: linear-gradient(to right bottom, #3249a2, #3d63b4);}
 .content .inner .service_box .service_img img{width:100%;}
 .content .inner .service_box .service_box--cont{width:50%;text-align:center;}
-.content .inner .service_box .service_box--cont strong{font-size:24px;color:#fff;font-weight:800;}
-.content .inner .service_box .service_box--cont p{margin-top:17px;font-size: 15px;color:#fff;line-height:24px;}
+.content .inner .service_box .service_box--cont strong{display:block;height:28px;padding:0 20px;text-overflow: ellipsis;white-space: nowrap;overflow:hidden; font-size:24px;color:#fff;font-weight:800;}
+.content .inner .service_box .service_box--cont p{ display: -webkit-box;word-wrap: break-word; -webkit-line-clamp:3;-webkit-box-orient: vertical;text-overflow:ellipsis;overflow:hidden; margin-top:17px;padding:0 20px;height:75px;font-size: 15px;color:#fff;line-height:24px;}
 .content .inner .service_box .service_box--cont .service_btn{display:inline-block;padding: 13px 46px;background:#064ca2;color:#fff;font-size: 14px;border-radius:5px;margin-top: 11px;}
 .content .inner .service_box .service_box--cont .service_btn.navy{background:#102b86;}
 .content .inner .btn_box{display:flex;justify-content:space-between;margin-bottom: 20px;}
@@ -84,8 +85,8 @@ header .btm .inner > div .login_box button{height:60px;background:url('../images
 .content .inner .info_list li a:after{content:"";display:block;position:absolute;right:30px;top:50%;transform:translateY(-50%);width: 26px;height: 26px;border-radius:50%;border:1px solid #ddd ;background:url(../images/icon_more.png)no-repeat center/ 9px 9px;}
 .content .inner .info_list li a:hover:after{border-color:#288bcc;background-image:url('../images/icon_more_ov.png');}
 .content .inner .info_list li a dl{display:flex;justify-content:start;}
-.content .inner .info_list li a dl dt{margin-right:20px;font-size:17px;color:#4f9fd4;font-weight: 700;}
-.content .inner .info_list li a dl dd{font-size:17px;color:#333;;}
+.content .inner .info_list li a dl dt{margin-right:20px;width:100px;font-size:17px;color:#4f9fd4;font-weight: 700;}
+.content .inner .info_list li a dl dd{flex:1;font-size:17px;color:#333;}
 
 .content .inner h4{font-size: 25px;color:#333;}
 .content .inner h4 .pointer{color:#288bcc}
